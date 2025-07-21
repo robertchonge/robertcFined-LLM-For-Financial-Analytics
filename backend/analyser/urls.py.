@@ -1,0 +1,6 @@
+from django.urls import path
+from .views import UploadFinancialFile
+
+urlpatterns = [
+    path('upload-financials/', UploadFinancialFile.as_view()),
+]
